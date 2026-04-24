@@ -1,14 +1,16 @@
-// public class reverse {
-//     public static  String rev(String str){
-//         String rev="";
-//         for(int i=str.length()-1; i>=0; i--){
-//             rev=rev+str.charAt(i);
-//         }
-//         return rev;
-//     }
+// public class reverse{
+//     static String ways(String str,String[] dp){
+//       if(str.length()==0) return "";
+//       int len=str.length();
+//       if(dp[len]!=null)  return dp[len];
+//       dp[len]= ways(str.substring(1), dp) + str.charAt(0);
+//       return dp[len];
+
+// }
 //     public static void main(String[] args) {
-//         String str="Aditya";
-//         String result= rev(str);
-//         System.out.println("reversed string:"+result);
+//       String str="hello";
+//       String[] dp=new String[str.length()+1];
+//       System.out.println(ways(str,dp));
+
 //     }
 // }
